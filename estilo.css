@@ -1,0 +1,81 @@
+@font-face{
+    font-family: 'nomelegal';
+    src: url(fonte/RubikVinyl-Regular.ttf);
+}
+
+body{
+    background-color: #15202b;
+
+}
+
+h1{
+    font-family: 'nomelegal';
+    color: white;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.butão{
+    color: white;
+    background-color: #273340;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 45vw;
+}
+
+.butão img{
+
+    width: 50px;
+}
+
+.option {
+    border: solid white;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    background-color: #1e2732;
+    cursor: pointer;
+    border-radius: 10px;
+
+  }
+
+  /* Estilo para opção correta */
+  .correct {
+    background-color: #00ba7c; /* Verde */
+  }
+
+  /* Estilo para opção errada */
+  .incorrect {
+    background-color: #f91880; /* Vermelho */
+  }
+
+  .question {
+    font-size: 3vw;
+    color: white;
+  }
+
+
+  .progress-container {
+    border: 2px solid white;
+    width: 300px;
+    height: 20px;
+    background-color: #273340;
+    margin: 20px;
+    position: relative;
+    border-radius: 6px;
+  }
+
+  .progress-bar {
+    height: 100%;
+    background-color: #f91880; /* Cor da barra de progresso */
+    width: 0%; /* Largura inicial da barra de progresso */
+    transition: width 0.3s ease-in-out; /* Transição suave */
+  }

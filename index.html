@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Spotfidle</h1>
+
+    <div id="button" class="butão">
+        <img src="play_arrow_FILL0_wght400_GRAD0_opsz24.png">
+        <audio id="VENTANNI" src="Maneskin-VENT'ANNI.mp3"></audio>
+    </div>
+
+    <div class="question">
+        <p>Qual é essa música?</p>
+      </div>
+
+  <div class="option" onclick="respostaIncorreta(this)">Torna a casa</div>
+  <div class="option" onclick="respostaIncorreta(this)">IL DONO DELLA VITTA</div>
+  <div class="option" onclick="respostaCorreta(this)">VENT'ANNI</div>
+  <div class="option" onclick="respostaIncorreta(this)">TIMEZONE</div>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+</body>
+</html>
