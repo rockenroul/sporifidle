@@ -88,6 +88,48 @@ nextButton.style.display = 'none';
 
 clickCount = 0;
   audioButton.disabled = false;
-}   
+}  
+
+const perguntas = [
+  {
+    pergunta: 'Qual é a capital do Brasil?',
+    opcoes: ['São Paulo', 'Rio de Janeiro', 'Brasília', 'Belo Horizonte'],
+    respostaCorreta: 'Brasília',
+  },
+  {
+    pergunta: 'Qual é a capital da França?',
+    opcoes: ['Londres', 'Berlim', 'Paris', 'Madri'],
+    respostaCorreta: 'Paris',
+  },
+  // Adicione mais perguntas conforme necessário
+];
+
+let perguntaAtual = 0; // Inicialize com a primeira pergunta
+
+function proximaPergunta() {
+  // Verifique se há mais perguntas disponíveis
+  if (perguntaAtual < perguntas.length) {
+    // Atualize a pergunta e as opções com base no índice atual
+    const pergunta = document.querySelector('.question p');
+    const opcoes = document.querySelectorAll('.option');
+
+    if (pergunta && opcoes) {
+      pergunta.innerText = perguntas[perguntaAtual].pergunta;
+
+      opcoes.forEach((opcao, index) => {
+        opcao.innerText = perguntas[perguntaAtual].opcoes[index];
+      });
+
+      // Resto do código para reiniciar opções, progresso, etc.
+
+      // Atualize o índice da pergunta atual
+      perguntaAtual++;
+    } else {
+      console.error("Elementos não encontrados.");
+    }
+  } else {
+    console.log("Fim do questionário."); // Todas as perguntas foram respondidas
+  }
+}
 
    
