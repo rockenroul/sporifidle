@@ -1,6 +1,7 @@
 const audioButton = document.getElementById('button');
 const myAudio = document.getElementById('VENTANNI');
 const progressBar = document.getElementById('progressBar');
+const nextButton = document.getElementById('nextButton');
 
 let clickCount = 0;
 
@@ -55,6 +56,7 @@ button.addEventListener('click', () => {
       } else {
         myAudio.currentTime = 0;
         progressBar.style.width = '100%';
+        nextButton.style.display = 'block';
         myAudio.play();
         audioButton.disabled = true;
       }
@@ -69,3 +71,23 @@ function respostaIncorreta(option) {
     option.classList.add('correct');
     myAudio.pause();
   }
+
+function proximaPergunta() {
+ const pergunta = document.querySelector('.question p');
+  const opcoes = document.querySelectorAll('.option');
+
+  pergunta.innerText = 'Qual é a capital da França?';
+
+  opcoes.forEach((opcao) => {
+    opcao.classList.remove('correct', 'incorrect');
+  });
+
+progressBar.style.width = '0%';
+
+nextButton.style.display = 'none';
+
+clickCount = 0;
+  audioButton.disabled = false;
+}   
+
+   
