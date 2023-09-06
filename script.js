@@ -76,7 +76,7 @@ function proximaPergunta() {
   const pergunta = document.querySelector('.question p');
   const opcoes = document.querySelectorAll('.option');
 
-  pergunta.innerText = 'Qual é a capital da França?';
+  question.innerText = 'Qual é a capital da França?';
 
   opcoes.forEach((opcao) => {
     opcao.classList.remove('correct', 'incorrect');
