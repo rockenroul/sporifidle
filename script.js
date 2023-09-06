@@ -73,12 +73,12 @@ function respostaIncorreta(option) {
   }
 
 function proximaPergunta() {
- const pergunta = document.querySelector('question');
-  const option = document.querySelectorAll('option');
+ const pergunta = document.querySelector(',question p');
+  const opcoes = document.querySelectorAll('.option');
 
   pergunta.innerText = 'Qual é a capital da França?';
 
-  option.forEach((opcao) => {
+  opcoes.forEach((opcao) => {
     opcao.classList.remove('correct', 'incorrect');
   });
 
