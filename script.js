@@ -74,11 +74,11 @@ function respostaIncorreta(option) {
 
 function proximaPergunta() {
  const pergunta = document.querySelector('.question p');
-  const opcoes = document.querySelectorAll('.option');
+  const option = document.querySelectorAll('.option');
 
   pergunta.innerText = 'Qual é a capital da França?';
 
-  opcoes.forEach((opcao) => {
+  option.forEach((opcao) => {
     opcao.classList.remove('correct', 'incorrect');
   });
 
