@@ -79,3 +79,8 @@ h1{
     width: 0%; /* Largura inicial da barra de progresso */
     transition: width 0.3s ease-in-out; /* Transição suave */
   }
+
+nextButton {
+      display: none; /* Inicialmente oculto */
+      margin: 20px;
+}                
