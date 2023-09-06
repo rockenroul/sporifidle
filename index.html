@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -17,18 +16,19 @@
 
     <div class="question">
         <p>Qual é essa música?</p>
-      </div>
+    </div>
 
-  <div class="option" onclick="respostaIncorreta(this)">Torna a casa</div>
-  <div class="option" onclick="respostaIncorreta(this)">IL DONO DELLA VITTA</div>
-  <div class="option" onclick="respostaCorreta(this)">VENT'ANNI</div>
-  <div class="option" onclick="respostaIncorreta(this)">TIMEZONE</div>
+    <div class="option" onclick="respostaIncorreta(this)">Torna a casa</div>
+    <div class="option" onclick="respostaIncorreta(this)">IL DONO DELLA VITTA</div>
+    <div class="option" onclick="respostaCorreta(this)">VENT'ANNI</div>
+    <div class="option" onclick="respostaIncorreta(this)">TIMEZONE</div>
 
-  <div class="progress-container">
-    <div class="progress-bar" id="progressBar"></div>
-  </div>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
 
     <button id="nextButton" onclick="proximaPergunta()">Próxima Pergunta</button>
 
+    <script src="script.js"></script>
 </body>
 </html>
