@@ -80,7 +80,7 @@ h1{
     transition: width 0.3s ease-in-out; /* Transição suave */
   }
 
-nextButton {
+.nextButton {
       display: none; /* Inicialmente oculto */
       margin: 20px;
 }                
