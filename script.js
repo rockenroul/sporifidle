@@ -76,7 +76,7 @@ function proximaPergunta() {
   const pergunta = document.querySelector('.question p');
   const opcoes = document.querySelectorAll('.option');
 
-  question.innerText = 'Qual é a capital da França?';
+  question.innerText = 'De qual álbum é essa musica?';
 
   opcoes.forEach((opcao) => {
     opcao.classList.remove('correct', 'incorrect');
